@@ -8,13 +8,13 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MaterialImportsModule } from './modules/material-imports.module';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
-import { HomePageComponent } from './screens/home-page/home-page.component';
-
+import { ListPostComponent } from './screens/list-post/list-post.component';
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
-    HomePageComponent
+    ListPostComponent,
+    
   ],
   imports: [
     BrowserModule,

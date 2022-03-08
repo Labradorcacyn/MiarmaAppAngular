@@ -1,0 +1,9 @@
+.example-card {
+  max-width: 600px;
+  padding: 10;
+  margin: auto;
+}
+
+.header {
+  width: 300px;
+}

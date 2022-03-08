@@ -21,6 +21,6 @@ export class AuthService {
 
   login(loginDto: AuthLoginDto): Observable<AuthLoginResponse> {
     let requestUrl = `${this.authBaseUrl}/login`;
-    return this.http.post<AuthLoginResponse>(requestUrl, loginDto);
+    return this.http.post<AuthLoginResponse>(requestUrl, loginDto, DEFAULT_HEADERS);
   }
 }

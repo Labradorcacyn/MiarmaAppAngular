@@ -20,4 +20,9 @@ export class ListPostComponent implements OnInit {
       this.listPosts = resp;
     })
   }
+
+  remPost(id:number){
+    this.postService.removePost(id).subscribe();
+    alert("Se ha borrado correctamente")
+  }
 }

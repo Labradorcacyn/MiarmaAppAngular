@@ -24,4 +24,9 @@ export class PostService {
     let requestUrl =  `${this.authBaseUrl}/public`;
     return this.http.get<PostResponse[]>(requestUrl, DEFAULT_HEADERS);
   }
+
+  removePost(id:number){
+    let requestUrl = `${this.authBaseUrl}/${id}`;
+    return this.http.delete<any>(requestUrl);
+  }
 }
